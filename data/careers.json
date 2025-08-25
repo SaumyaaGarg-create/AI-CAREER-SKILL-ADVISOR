@@ -1,0 +1,92 @@
+[
+  {
+    "name": "AI/ML Engineer",
+    "tags": ["ai", "ml", "machine learning", "python", "data"],
+    "skills": ["Python", "Machine Learning", "Data Analysis", "Linear Algebra", "MLOps", "TensorFlow", "PyTorch"],
+    "strengths": ["math", "problem solving"]
+  },
+  {
+    "name": "Data Scientist",
+    "tags": ["data", "statistics", "python", "analytics"],
+    "skills": ["Python", "Statistics", "Data Visualization", "SQL", "Machine Learning"],
+    "strengths": ["math", "analysis"]
+  },
+  {
+    "name": "Data Engineer",
+    "tags": ["data", "pipelines", "etl", "cloud", "big data"],
+    "skills": ["Python", "SQL", "ETL", "Airflow", "Cloud", "Spark"],
+    "strengths": ["systems thinking", "problem solving"]
+  },
+  {
+    "name": "Frontend Developer",
+    "tags": ["web", "frontend", "ui", "react", "javascript"],
+    "skills": ["HTML", "CSS", "JavaScript", "React", "UI/UX", "TypeScript"],
+    "strengths": ["design", "creativity"]
+  },
+  {
+    "name": "Backend Developer",
+    "tags": ["web", "backend", "api", "servers", "python", "node"],
+    "skills": ["APIs", "Databases", "Python", "Node.js", "System Design", "Docker"],
+    "strengths": ["problem solving", "systems thinking"]
+  },
+  {
+    "name": "Full‑Stack Developer",
+    "tags": ["web", "frontend", "backend", "react", "node"],
+    "skills": ["JavaScript", "TypeScript", "React", "Node.js", "APIs", "Databases"],
+    "strengths": ["problem solving", "creativity"]
+  },
+  {
+    "name": "Mobile Developer",
+    "tags": ["mobile", "android", "ios", "react native", "flutter"],
+    "skills": ["Android (Kotlin)", "iOS (Swift)", "Flutter", "React Native", "UI/UX"],
+    "strengths": ["design", "problem solving"]
+  },
+  {
+    "name": "Cloud Engineer",
+    "tags": ["cloud", "aws", "gcp", "azure", "infra"],
+    "skills": ["Cloud", "Linux", "Networking", "Terraform", "Docker", "Kubernetes"],
+    "strengths": ["systems thinking", "attention to detail"]
+  },
+  {
+    "name": "DevOps Engineer",
+    "tags": ["devops", "ci/cd", "automation", "sre"],
+    "skills": ["CI/CD", "Docker", "Kubernetes", "Linux", "Monitoring", "Cloud"],
+    "strengths": ["systems thinking", "problem solving"]
+  },
+  {
+    "name": "Cybersecurity Analyst",
+    "tags": ["security", "networking", "ethical hacking"],
+    "skills": ["Networking", "Linux", "Security Tools", "Threat Modeling"],
+    "strengths": ["attention to detail"]
+  },
+  {
+    "name": "Embedded/IoT Engineer",
+    "tags": ["embedded", "iot", "microcontrollers", "hardware"],
+    "skills": ["C/C++", "Microcontrollers", "Sensors", "RTOS", "Networking"],
+    "strengths": ["problem solving", "systems thinking"]
+  },
+  {
+    "name": "AR/VR Developer",
+    "tags": ["ar", "vr", "unity", "3d"],
+    "skills": ["Unity", "C#", "3D Modeling", "Blender", "UI/UX"],
+    "strengths": ["creativity", "design"]
+  },
+  {
+    "name": "Product Manager",
+    "tags": ["product", "strategy", "communication"],
+    "skills": ["Roadmapping", "User Research", "Analytics", "Communication"],
+    "strengths": ["communication", "leadership"]
+  },
+  {
+    "name": "AI Product Manager",
+    "tags": ["product", "ai", "ml", "strategy"],
+    "skills": ["AI Fundamentals", "User Research", "Roadmapping", "Analytics", "Communication"],
+    "strengths": ["communication", "leadership", "analysis"]
+  },
+  {
+    "name": "UI/UX Designer",
+    "tags": ["uiux", "design", "figma"],
+    "skills": ["UI/UX", "Figma", "Prototyping", "Accessibility", "Design Systems"],
+    "strengths": ["design", "creativity", "communication"]
+  }
+]

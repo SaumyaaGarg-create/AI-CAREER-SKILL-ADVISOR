@@ -1,0 +1,128 @@
+{
+  "Python": [
+    {"title":"Python for Everybody","provider":"U‑Michigan / Coursera","url":"https://www.coursera.org/specializations/python"},
+    {"title":"Automate the Boring Stuff","provider":"Book/Online","url":"https://automatetheboringstuff.com/"}
+  ],
+  "Machine Learning": [
+    {"title":"Machine Learning (Andrew Ng)","provider":"Coursera","url":"https://www.coursera.org/learn/machine-learning"},
+    {"title":"Intro to ML","provider":"Kaggle","url":"https://www.kaggle.com/learn/intro-to-machine-learning"}
+  ],
+  "Data Analysis": [
+    {"title":"Data Analyst in Python","provider":"DataCamp","url":"https://www.datacamp.com/track/data-analyst-with-python"},
+    {"title":"Pandas","provider":"Kaggle","url":"https://www.kaggle.com/learn/pandas"}
+  ],
+  "Linear Algebra": [
+    {"title":"Linear Algebra","provider":"Khan Academy","url":"https://www.khanacademy.org/math/linear-algebra"}
+  ],
+  "MLOps": [
+    {"title":"MLOps Specialization","provider":"DeepLearning.AI","url":"https://www.coursera.org/specializations/machine-learning-engineering-for-production-mlops"}
+  ],
+  "TensorFlow": [
+    {"title":"TensorFlow Developer","provider":"Coursera","url":"https://www.coursera.org/professional-certificates/tensorflow-in-practice"}
+  ],
+  "PyTorch": [
+    {"title":"Deep Learning with PyTorch","provider":"Udacity","url":"https://www.udacity.com/course/deep-learning-pytorch--ud188"}
+  ],
+  "Statistics": [
+    {"title":"Statistics with Python","provider":"Coursera","url":"https://www.coursera.org/specializations/statistics-with-python"}
+  ],
+  "Data Visualization": [
+    {"title":"Storytelling with Data","provider":"Blog/Book","url":"https://www.storytellingwithdata.com/"}
+  ],
+  "SQL": [
+    {"title":"SQL for Analysis","provider":"Mode","url":"https://mode.com/sql-tutorial/"},
+    {"title":"SQL (Free)","provider":"Khan Academy","url":"https://www.khanacademy.org/computing/computer-programming/sql"}
+  ],
+  "HTML": [
+    {"title":"Responsive Web Design","provider":"freeCodeCamp","url":"https://www.freecodecamp.org/learn/2022/responsive-web-design/"}
+  ],
+  "CSS": [
+    {"title":"CSS Flexbox & Grid","provider":"freeCodeCamp","url":"https://www.freecodecamp.org/learn"}
+  ],
+  "JavaScript": [
+    {"title":"JS Algorithms & DS","provider":"freeCodeCamp","url":"https://www.freecodecamp.org/learn"},
+    {"title":"MDN JavaScript Guide","provider":"MDN","url":"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide"}
+  ],
+  "TypeScript": [
+    {"title":"TypeScript Docs (Handbook)","provider":"Microsoft","url":"https://www.typescriptlang.org/docs/handbook/intro.html"}
+  ],
+  "React": [
+    {"title":"React Docs (Learn)","provider":"react.dev","url":"https://react.dev/learn"}
+  ],
+  "APIs": [
+    {"title":"Designing REST APIs","provider":"Microsoft Learn","url":"https://learn.microsoft.com/"}
+  ],
+  "Databases": [
+    {"title":"Intro to Databases","provider":"Stanford (archived)","url":"https://lagunita.stanford.edu"}
+  ],
+  "System Design": [
+    {"title":"System Design Primer","provider":"GitHub","url":"https://github.com/donnemartin/system-design-primer"}
+  ],
+  "Docker": [
+    {"title":"Docker Curriculum","provider":"Prakhar Srivastav","url":"https://docker-curriculum.com/"}
+  ],
+  "Kubernetes": [
+    {"title":"Kubernetes Basics","provider":"kubernetes.io","url":"https://kubernetes.io/docs/tutorials/kubernetes-basics/"}
+  ],
+  "Linux": [
+    {"title":"Intro to Linux","provider":"Linux Foundation","url":"https://training.linuxfoundation.org/resources/free-courses/"}
+  ],
+  "Networking": [
+    {"title":"Computer Networking","provider":"Udacity","url":"https://www.udacity.com/course/computer-networking--ud436"}
+  ],
+  "CI/CD": [
+    {"title":"CI/CD Concepts","provider":"Atlassian","url":"https://www.atlassian.com/continuous-delivery"}
+  ],
+  "Cloud": [
+    {"title":"AWS Skill Builder (Free)","provider":"AWS","url":"https://skillbuilder.aws/"},
+    {"title":"Google Cloud Training","provider":"Google","url":"https://cloud.google.com/training"}
+  ],
+  "Android (Kotlin)": [
+    {"title":"Android Basics with Compose","provider":"Google","url":"https://developer.android.com/courses/android-basics-compose"}
+  ],
+  "iOS (Swift)": [
+    {"title":"Develop in Swift","provider":"Apple","url":"https://developer.apple.com/tutorials/app-dev-training"}
+  ],
+  "Flutter": [
+    {"title":"Flutter Docs (Codelabs)","provider":"Google","url":"https://docs.flutter.dev/get-started/codelab"}
+  ],
+  "React Native": [
+    {"title":"React Native Docs","provider":"Meta","url":"https://reactnative.dev/docs/getting-started"}
+  ],
+  "UI/UX": [
+    {"title":"Google UX Design","provider":"Coursera","url":"https://www.coursera.org/professional-certificates/google-ux-design"}
+  ],
+  "Figma": [
+    {"title":"Figma for Beginners","provider":"Figma","url":"https://help.figma.com/hc/en-us/sections/360004495373-Get-started"}
+  ],
+  "C/C++": [
+    {"title":"C Programming","provider":"Harvard CS50 (YouTube)","url":"https://www.youtube.com/watch?v=OKOm2916U6s"}
+  ],
+  "Microcontrollers": [
+    {"title":"Arduino Docs","provider":"Arduino","url":"https://docs.arduino.cc/"}
+  ],
+  "Unity": [
+    {"title":"Unity Learn","provider":"Unity","url":"https://learn.unity.com/"}
+  ],
+  "Blender": [
+    {"title":"Blender Fundamentals","provider":"Blender","url":"https://www.blender.org/support/tutorials/"}
+  ],
+  "Security Tools": [
+    {"title":"Practical Ethical Hacking","provider":"TCM","url":"https://tcm-sec.com"}
+  ],
+  "Threat Modeling": [
+    {"title":"OWASP Threat Modeling","provider":"OWASP","url":"https://owasp.org/www-community/Threat_Modeling"}
+  ],
+  "Roadmapping": [
+    {"title":"Product Roadmaps 101","provider":"Atlassian","url":"https://www.atlassian.com/agile/product-management/product-roadmaps"}
+  ],
+  "User Research": [
+    {"title":"Which UX Research Methods?","provider":"Nielsen Norman Group","url":"https://www.nngroup.com/articles/which-ux-research-methods/"}
+  ],
+  "Analytics": [
+    {"title":"Google Analytics 4","provider":"Google","url":"https://analytics.google.com"}
+  ],
+  "Communication": [
+    {"title":"Business Communication","provider":"Coursera","url":"https://www.coursera.org"}
+  ]
+}

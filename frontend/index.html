@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI Career & Skill Advisor — Neon</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="bg"></div>
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo">☄️</div>
+      <div>
+        <h1>AI Career & Skill Advisor</h1>
+        <p class="subtitle">Vibrant MVP • Phantom Agents</p>
+      </div>
+    </div>
+    <nav class="actions">
+      <button id="clearBtn" class="ghost">Clear</button>
+      <a class="primary" href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card hero">
+      <h2>Tell us about you</h2>
+      <p class="muted">More options → better recommendations. Nothing is mandatory except your name.</p>
+      <form id="profileForm" class="grid">
+        <div class="col">
+          <label>Name</label>
+          <input type="text" id="name" placeholder="Your name" required />
+        </div>
+
+        <div class="col">
+          <label>Goal (role you want)</label>
+          <input type="text" id="goal" placeholder="e.g., Data Scientist, Frontend, AI/ML" />
+        </div>
+
+        <div class="col">
+          <label>Experience Level</label>
+          <select id="level">
+            <option>Beginner</option>
+            <option>Intermediate</option>
+            <option>Advanced</option>
+          </select>
+        </div>
+
+        <div class="col">
+          <label>Learning Style</label>
+          <select id="style">
+            <option>Videos</option>
+            <option>Interactive practice</option>
+            <option>Reading</option>
+            <option>Projects-first</option>
+          </select>
+        </div>
+
+        <div class="col">
+          <label>Weekly time to learn</label>
+          <select id="time">
+            <option>2 hrs</option>
+            <option>5 hrs</option>
+            <option>10 hrs</option>
+            <option>15+ hrs</option>
+          </select>
+        </div>
+
+        <div class="col full">
+          <label>Interests</label>
+          <div class="chips">
+            <label><input type="checkbox" name="interests" value="ai" />AI/ML</label>
+            <label><input type="checkbox" name="interests" value="data" />Data</label>
+            <label><input type="checkbox" name="interests" value="web" />Web Dev</label>
+            <label><input type="checkbox" name="interests" value="mobile" />Mobile</label>
+            <label><input type="checkbox" name="interests" value="security" />Cybersecurity</label>
+            <label><input type="checkbox" name="interests" value="cloud" />Cloud</label>
+            <label><input type="checkbox" name="interests" value="devops" />DevOps</label>
+            <label><input type="checkbox" name="interests" value="product" />Product</label>
+            <label><input type="checkbox" name="interests" value="uiux" />UI/UX</label>
+            <label><input type="checkbox" name="interests" value="embedded" />Embedded/IoT</label>
+            <label><input type="checkbox" name="interests" value="arvr" />AR/VR</label>
+          </div>
+        </div>
+
+        <div class="col full">
+          <label>Strengths</label>
+          <div class="chips">
+            <label><input type="checkbox" name="strengths" value="math" />Math</label>
+            <label><input type="checkbox" name="strengths" value="problem solving" />Problem Solving</label>
+            <label><input type="checkbox" name="strengths" value="design" />Design</label>
+            <label><input type="checkbox" name="strengths" value="communication" />Communication</label>
+            <label><input type="checkbox" name="strengths" value="analysis" />Analysis</label>
+            <label><input type="checkbox" name="strengths" value="leadership" />Leadership</label>
+            <label><input type="checkbox" name="strengths" value="systems thinking" />Systems Thinking</label>
+            <label><input type="checkbox" name="strengths" value="creativity" />Creativity</label>
+          </div>
+        </div>
+
+        <div class="col full">
+          <details>
+            <summary>More options</summary>
+            <div class="more grid">
+              <div class="col">
+                <label>Location Preference</label>
+                <select id="location">
+                  <option>Remote</option>
+                  <option>Hybrid</option>
+                  <option>Onsite</option>
+                </select>
+              </div>
+              <div class="col">
+                <label>Looking for internships?</label>
+                <select id="internship">
+                  <option>No</option>
+                  <option>Yes</option>
+                </select>
+              </div>
+              <div class="col full">
+                <label>Preferred Domains for internships</label>
+                <input id="domains" type="text" placeholder="comma separated e.g., fintech, healthcare, edtech" />
+              </div>
+            </div>
+          </details>
+        </div>
+
+        <div class="cta">
+          <button class="primary" type="submit">Get Recommendations</button>
+          <button type="button" id="randomBtn" class="ghost">Randomize</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- Greeting line lives here -->
+    <section class="tabs card hidden" id="tabs">
+      <div id="hello" class="muted" style="margin-bottom:8px;"></div>
+
+      <div class="tabbar">
+        <button class="tab active" data-tab="t1">Careers</button>
+        <button class="tab" data-tab="t2">Skills & Courses</button>
+        <button class="tab" data-tab="t3">Plan</button>
+        <button class="tab" data-tab="t4">Internships</button>
+      </div>
+
+      <div class="tabcontent active" id="t1"><div id="careers"></div></div>
+      <div class="tabcontent" id="t2">
+        <div id="skills"></div>
+        <div id="courses"></div>
+      </div>
+      <div class="tabcontent" id="t3">
+        <div id="plan"></div>
+        <div class="progress"><div id="bar"></div></div>
+        <p id="progressText"></p>
+      </div>
+      <div class="tabcontent" id="t4">
+        <div id="internships" class="grid3"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <small>© 2025 Neon Build • MVP | Tip: push to GitHub for Round 1</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

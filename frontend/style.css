@@ -1,0 +1,105 @@
+/* Neon vibrant theme */
+:root{
+  --bg1:#0B0F1A;
+  --bg2:#0E1222;
+  --card:#121830;
+  --text:#ECF2FF;
+  --muted:#A9B4CE;
+  --primary:#7C5CFF;
+  --primary-2:#00E5A8;
+  --accent:#FF7AD9;
+  --chip:#1E2547;
+  --chip-border:#2C3566;
+  --ok:#37E08C;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:'Inter',system-ui,Arial,sans-serif;
+  color:var(--text);
+  background: radial-gradient(1200px 800px at 10% -10%, rgba(124,92,255,.35), transparent),
+              radial-gradient(900px 700px at 110% 10%, rgba(0,229,168,.25), transparent),
+              linear-gradient(180deg, var(--bg1), var(--bg2));
+  overflow-x:hidden;
+}
+
+.bg::before{content:""; position:fixed; inset:-10% -10% auto -10%; height:30vh; filter:blur(40px); z-index:-1;}
+
+.topbar{
+  display:flex; align-items:center; justify-content:space-between;
+  padding:16px 22px; position:sticky; top:0; backdrop-filter: blur(8px);
+  background: linear-gradient(180deg, rgba(10,12,22,0.75), rgba(10,12,22,0.35));
+  border-bottom:1px solid rgba(255,255,255,.06);
+}
+.brand{display:flex; align-items:center; gap:12px}
+.logo{width:38px; height:38px; display:grid; place-items:center; font-size:18px;
+  background: radial-gradient(120% 120% at 20% 20%, var(--accent), var(--primary));
+  border-radius:12px; box-shadow:0 6px 24px rgba(124,92,255,.5);
+}
+h1{font-size:18px; margin:0}
+.subtitle{margin:2px 0 0; color:var(--muted); font-size:12px}
+.actions{display:flex; gap:10px}
+a.primary, button.primary{
+  padding:10px 14px; border-radius:12px; border:0; color:#fff; font-weight:700; cursor:pointer;
+  background: linear-gradient(135deg, var(--primary), var(--primary-2));
+  box-shadow:0 10px 30px rgba(124,92,255,.4), inset 0 0 20px rgba(255,255,255,.08);
+}
+button.ghost, .ghost{
+  padding:10px 14px; border-radius:12px; border:1px solid rgba(255,255,255,.12); background:transparent; color:var(--text); cursor:pointer;
+}
+
+.container{max-width:1080px; margin:0 auto; padding:24px 16px}
+.card{
+  background: linear-gradient(180deg, rgba(18,24,48,.9), rgba(18,24,48,.55));
+  border:1px solid rgba(255,255,255,.06); border-radius:18px; padding:18px 18px; box-shadow:0 10px 30px rgba(0,0,0,.35);
+}
+.hero h2{margin:0 0 6px}
+.muted{color:var(--muted)}
+.grid{display:grid; grid-template-columns:repeat(2,1fr); gap:12px}
+.grid .full{grid-column:1/-1}
+.col label{display:block; margin:4px 0 6px; color:#BFD2FF; font-weight:600; letter-spacing:.2px}
+input[type=text], select{
+  width:100%; padding:12px 12px; border-radius:12px; border:1px solid rgba(255,255,255,.12);
+  background:#0E1430; color:var(--text);
+}
+details{border:1px dashed rgba(255,255,255,.15); border-radius:12px; padding:12px}
+details summary{cursor:pointer; color:#C8D7FF; font-weight:600}
+.more{margin-top:8px}
+
+.chips label{
+  display:inline-flex; align-items:center; gap:8px; margin:6px 8px 0 0; padding:6px 12px;
+  background:var(--chip); border:1px solid var(--chip-border); border-radius:999px; cursor:pointer;
+}
+.chips input{accent-color:var(--primary)}
+
+.cta{display:flex; gap:12px; margin-top:10px}
+
+.tabs{margin-top:16px}
+.tabbar{display:flex; gap:10px; flex-wrap:wrap; margin-bottom:8px}
+.tab{
+  border:1px solid rgba(255,255,255,.12); background:#0E1430; color:#D9E3FF; padding:8px 12px; border-radius:999px; cursor:pointer;
+}
+.tab.active{background:linear-gradient(135deg, var(--primary), var(--accent)); color:#0A0C16; font-weight:800}
+
+.tabcontent{display:none}
+.tabcontent.active{display:block}
+
+#careers .item, #courses .item{
+  background:#0B1233; padding:12px; border-radius:12px; border:1px solid rgba(255,255,255,.06); margin:8px 0;
+}
+#skills .pill{display:inline-block; margin:5px 6px 0 0; padding:7px 12px; border-radius:999px; background:linear-gradient(135deg, #1f2752, #2b3c8a); border:1px solid #37469b}
+
+.grid3{display:grid; grid-template-columns:repeat(3,1fr); gap:12px}
+.card-mini{background:#0B1233; border:1px solid rgba(255,255,255,.08); border-radius:14px; padding:14px}
+.card-mini h4{margin:0 0 6px}
+.badge{display:inline-block; padding:4px 8px; border-radius:999px; background:#16235A; border:1px solid #2C3F9A; color:#CFE2FF; font-size:12px}
+
+.progress{height:14px; border-radius:999px; background:#1A2246; margin-top:10px; overflow:hidden}
+#bar{height:100%; width:0%; background:linear-gradient(90deg, var(--ok), #B1F8D7)}
+
+.foot{padding:18px; text-align:center; color:var(--muted)}
+a{color:#9EC6FF; text-decoration:none}
+a:hover{text-decoration:underline}
+.hidden{display:none}
